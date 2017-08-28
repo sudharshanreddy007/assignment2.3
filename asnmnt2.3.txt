@@ -1,0 +1,24 @@
+JIT-JUST IN TIME 
+
+ Jit (just-in-time)compiler is a component of the java runtime environment that improves the performance of java 
+ applications at runtime.
+
+ In java you have to write and compile a program only once .The java on any platform will interpret the compiled 
+ bytecode into instuction that can be sent directly to the processor.
+
+ Java virtual machine handle only one bytecode instruction at a time that makes execution slow,
+ but using the java just-in-time compiler at the system platform compiles the bytecode into the systemcode.
+ 
+ When a particular bytecode is executed first time, jit complier compiles it into native machine code which can be 
+ directly executed by the machine in which the java program runs. Once the byte code is recompiled by JIT compiler, 
+ the execution time needed will be much lesser. 
+
+ This compilation happens when the byte code is about to be executed and hence the name (just in time).
+
+ After the code has been re-compiled by the just-in-time compiler, it will usually run more quickly.
+ 
+ Once the bytecode is compiled into that particular machine code, it is cached by the JIT compiler and will be reused
+ for the future needs. Hence the main performance improvement by using JIT compiler can be seen when the same code is 
+ executed again and again because jit make use of the machine code which is cached and stored.
+
+ Jit compilation does require processor time and memory usage.
